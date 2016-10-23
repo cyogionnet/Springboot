@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: vision
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Yogi
+Implementation-Vendor-Id: com.vzw
+Build-Jdk: 1.8.0_60
+Implementation-URL: http://projects.spring.io/spring-boot/vision/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

@@ -1,0 +1,28 @@
+info:
+  component: Zuul Server
+
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+  health:
+    sensitive: false
+
+zuul:
+  ignoredServices: "*"
+  routes:
+    device:
+      path: /device/**
+    vision:
+      path: /vision/**
+
+server:
+  port: 1212
+  
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka/
+
+

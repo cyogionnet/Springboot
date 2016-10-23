@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: Service Registry
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Yogi
+Implementation-Vendor-Id: com.vzw
+Build-Jdk: 1.8.0_60
+Implementation-URL: http://projects.spring.io/spring-boot/service-regi
+ stry/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
