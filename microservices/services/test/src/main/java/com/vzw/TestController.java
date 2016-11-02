@@ -1,5 +1,7 @@
 package com.vzw;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -7,9 +9,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/test")
 public class TestController {
+	
+	private static final Logger logger = LoggerFactory.getLogger(TestController.class);
 
 	@RequestMapping("/{user}")
 	public String hello(@PathVariable  String user) {
+		logger.info("TestController - hello");
 		return "Hello " + user;
 	}
 	

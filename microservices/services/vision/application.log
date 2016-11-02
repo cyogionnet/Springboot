@@ -1,0 +1,216 @@
+2016-11-01 18:37:56.343  INFO 9013 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8888
+2016-11-01 18:37:56.585  INFO 9013 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=vision, profiles=[default], label=master, version=f6b3fb8c69d293c2884ec01688c03e76e920145c, state=null
+2016-11-01 18:37:56.587  INFO 9013 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource [name='configService', propertySources=[MapPropertySource [name='configClient'], MapPropertySource [name='/Users/Yogi/Documents/Projects/SpringBoot/microservices/poc/verizon/centeral-config/vision.properties']]]
+2016-11-01 18:37:56.686  INFO 9013 --- [main] com.vzw.VisionApplication                : No active profile set, falling back to default profiles: default
+2016-11-01 18:37:56.727  INFO 9013 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6bb75258: startup date [Tue Nov 01 18:37:56 CDT 2016]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@78123e82
+2016-11-01 18:37:57.969  INFO 9013 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'hystrixFeature' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration$HystrixWebConfiguration; factoryMethodName=hystrixFeature; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/hystrix/HystrixCircuitBreakerConfiguration$HystrixWebConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration; factoryMethodName=hystrixFeature; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/hystrix/HystrixCircuitBreakerConfiguration.class]]
+2016-11-01 18:37:58.308  INFO 9013 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2016-11-01 18:37:58.440  WARN 9013 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2016-11-01 18:37:58.720  INFO 9013 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0f3438b8-2f93-3d8d-a32d-3e4abd4f5e0b
+2016-11-01 18:37:58.744  INFO 9013 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-01 18:37:58.963  INFO 9013 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'scopedTarget.visionApplication' of type [class com.vzw.VisionApplication$$EnhancerBySpringCGLIB$$4d52d9e4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 18:37:59.238  INFO 9013 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'jamonPerformanceMonitorInterceptor' of type [class org.springframework.aop.interceptor.JamonPerformanceMonitorInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 18:37:59.244  INFO 9013 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'performanceAdvisor' of type [class org.springframework.aop.support.DefaultPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 18:37:59.254  INFO 9013 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$548af81d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 18:37:59.363  INFO 9013 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [class org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$48febcc1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 18:37:59.403  INFO 9013 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' of type [class org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 18:37:59.424  INFO 9013 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers' of type [class org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 18:37:59.433  INFO 9013 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.cache.RedisCacheConfiguration' of type [class org.springframework.boot.autoconfigure.cache.RedisCacheConfiguration$$EnhancerBySpringCGLIB$$f990591b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 18:37:59.444  INFO 9013 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration$RedisConfiguration' of type [class org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration$RedisConfiguration$$EnhancerBySpringCGLIB$$511b478c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 18:37:59.463  INFO 9013 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [class org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 18:37:59.481  INFO 9013 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration$RedisConnectionConfiguration' of type [class org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration$RedisConnectionConfiguration$$EnhancerBySpringCGLIB$$9f72e90e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 18:37:59.563  INFO 9013 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConnectionFactory' of type [class org.springframework.data.redis.connection.jedis.JedisConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 18:37:59.625  INFO 9013 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisTemplate' of type [class org.springframework.data.redis.core.RedisTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 18:37:59.841  INFO 9013 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheManager' of type [class org.springframework.data.redis.cache.RedisCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 18:37:59.856  INFO 9013 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'cacheAutoConfigurationValidator' of type [class org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 18:37:59.892  INFO 9013 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2792c4fc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-01 18:38:00.346  INFO 9013 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 0 (http)
+2016-11-01 18:38:00.362  INFO 9013 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-11-01 18:38:00.364  INFO 9013 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.5
+2016-11-01 18:38:00.495  INFO 9013 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2016-11-01 18:38:00.495  INFO 9013 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3768 ms
+2016-11-01 18:38:01.035  INFO 9013 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'proxyStreamServlet' to [/proxy.stream]
+2016-11-01 18:38:01.037  INFO 9013 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'turbineStreamServlet' to [/turbine.stream]
+2016-11-01 18:38:01.038  INFO 9013 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2016-11-01 18:38:01.041  INFO 9013 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2016-11-01 18:38:01.042  INFO 9013 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-11-01 18:38:01.042  INFO 9013 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-11-01 18:38:01.042  INFO 9013 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-11-01 18:38:01.043  INFO 9013 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2016-11-01 18:38:01.043  INFO 9013 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2016-11-01 18:38:01.043  INFO 9013 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2016-11-01 18:38:01.253  INFO 9013 --- [main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6bb75258: startup date [Tue Nov 01 18:37:56 CDT 2016]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@78123e82] and template loader path [classpath:/templates/]
+2016-11-01 18:38:01.255  INFO 9013 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2016-11-01 18:38:01.651  WARN 9013 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2016-11-01 18:38:01.652  INFO 9013 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2016-11-01 18:38:01.659  INFO 9013 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@21a9f95b
+2016-11-01 18:38:02.953  INFO 9013 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6bb75258: startup date [Tue Nov 01 18:37:56 CDT 2016]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@78123e82
+2016-11-01 18:38:03.130  INFO 9013 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/vision/customer/{accountNo}]}" onto public java.lang.String com.vzw.VisionController.retrieveCustomer(java.lang.String)
+2016-11-01 18:38:03.132  INFO 9013 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/vision/test/{accountNo}]}" onto public java.lang.String com.vzw.VisionController.viewCustomer(java.lang.String)
+2016-11-01 18:38:03.133  INFO 9013 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hystrix/{path}]}" onto public java.lang.String org.springframework.cloud.netflix.hystrix.dashboard.HystrixDashboardController.monitor(java.lang.String,org.springframework.ui.Model,org.springframework.web.context.request.WebRequest)
+2016-11-01 18:38:03.133  INFO 9013 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hystrix]}" onto public java.lang.String org.springframework.cloud.netflix.hystrix.dashboard.HystrixDashboardController.home(org.springframework.ui.Model,org.springframework.web.context.request.WebRequest)
+2016-11-01 18:38:03.136  INFO 9013 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-11-01 18:38:03.137  INFO 9013 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-11-01 18:38:03.255  INFO 9013 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-01 18:38:03.255  INFO 9013 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-01 18:38:03.348  INFO 9013 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-01 18:38:04.429  INFO 9013 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-11-01 18:38:04.431  INFO 9013 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+2016-11-01 18:38:04.433  INFO 9013 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-11-01 18:38:04.435  INFO 9013 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2016-11-01 18:38:04.436  INFO 9013 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2016-11-01 18:38:04.436  INFO 9013 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2016-11-01 18:38:04.437  INFO 9013 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-11-01 18:38:04.439  INFO 9013 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2016-11-01 18:38:04.439  INFO 9013 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-11-01 18:38:04.440  INFO 9013 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-11-01 18:38:04.443  INFO 9013 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-11-01 18:38:04.444  INFO 9013 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2016-11-01 18:38:04.447  INFO 9013 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2016-11-01 18:38:04.448  INFO 9013 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/features || /features.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-11-01 18:38:04.449  INFO 9013 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2016-11-01 18:38:04.452  INFO 9013 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/hystrix.stream/**]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.cloud.netflix.endpoint.ServletWrappingEndpoint.handle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2016-11-01 18:38:04.454  INFO 9013 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+2016-11-01 18:38:04.460  INFO 9013 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-11-01 18:38:04.463  INFO 9013 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2016-11-01 18:38:04.465  INFO 9013 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-11-01 18:38:04.467  INFO 9013 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/logfile || /logfile.json],methods=[GET || HEAD]}" onto public void org.springframework.boot.actuate.endpoint.mvc.LogFileMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2016-11-01 18:38:04.470  INFO 9013 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-11-01 18:38:04.471  INFO 9013 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-11-01 18:38:05.184  WARN 9013 --- [main] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2016-11-01 18:38:05.283  WARN 9013 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2016-11-01 18:38:05.283  INFO 9013 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2016-11-01 18:38:05.398  INFO 9013 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-11-01 18:38:05.414  INFO 9013 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2016-11-01 18:38:05.416  INFO 9013 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2016-11-01 18:38:05.418  INFO 9013 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2016-11-01 18:38:05.419  INFO 9013 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+2016-11-01 18:38:05.420  INFO 9013 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+2016-11-01 18:38:05.424  INFO 9013 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2016-11-01 18:38:05.441  INFO 9013 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+2016-11-01 18:38:05.456  INFO 9013 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2016-11-01 18:38:05.475  INFO 9013 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=6bb75258,type=ConfigurationPropertiesRebinder]
+2016-11-01 18:38:05.485  INFO 9013 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+2016-11-01 18:38:05.697  INFO 9013 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2016-11-01 18:38:05.706  INFO 9013 --- [main] o.s.c.n.turbine.SpringAggregatorFactory  : Could not find monitors: []
+2016-11-01 18:38:05.913  INFO 9013 --- [main] c.n.t.monitor.cluster.ClusterMonitor     : Registering event handler for cluster monitor: StaticListener_For_Aggregator
+2016-11-01 18:38:05.916  INFO 9013 --- [main] c.n.t.handler.TurbineDataDispatcher      : 
+
+Just added and starting handler tuple: StaticListener_For_Aggregator
+2016-11-01 18:38:05.917  INFO 9013 --- [main] c.n.t.monitor.cluster.ClusterMonitor     : All event handlers for cluster monitor: [StaticListener_For_Aggregator]
+2016-11-01 18:38:05.918  INFO 9013 --- [main] c.n.t.monitor.cluster.ClusterMonitor     : Starting up the cluster monitor for default_agg
+2016-11-01 18:38:05.925  INFO 9013 --- [main] c.n.t.discovery.InstanceObservable       : Starting InstanceObservable at frequency: 60000 millis
+2016-11-01 18:38:05.929  INFO 9013 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2016-11-01 18:38:05.929  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2016-11-01 18:38:05.929  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2016-11-01 18:38:05.929  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2016-11-01 18:38:05.985  INFO 9013 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2016-11-01 18:38:05.990  INFO 9013 --- [main] ration$HystrixMetricsPollerConfiguration : Starting poller
+2016-11-01 18:38:06.079  INFO 9013 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 63985 (http)
+2016-11-01 18:38:06.080  INFO 9013 --- [main] c.n.e.EurekaDiscoveryClientConfiguration : Updating port to 63985
+2016-11-01 18:38:06.100  INFO 9013 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2016-11-01 18:38:06.359  INFO 9013 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2016-11-01 18:38:06.361  INFO 9013 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2016-11-01 18:38:06.492  INFO 9013 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2016-11-01 18:38:06.493  INFO 9013 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2016-11-01 18:38:06.824  INFO 9013 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2016-11-01 18:38:06.857  INFO 9013 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2016-11-01 18:38:06.858  INFO 9013 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2016-11-01 18:38:06.858  INFO 9013 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2016-11-01 18:38:06.860  INFO 9013 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2016-11-01 18:38:06.862  INFO 9013 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2016-11-01 18:38:06.863  INFO 9013 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2016-11-01 18:38:06.865  INFO 9013 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2016-11-01 18:38:07.101  INFO 9013 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2016-11-01 18:38:07.103  INFO 9013 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2016-11-01 18:38:07.106  INFO 9013 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2016-11-01 18:38:07.110  INFO 9013 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1478043487109 with initial instances count: 3
+2016-11-01 18:38:07.214  INFO 9013 --- [main] c.n.e.EurekaDiscoveryClientConfiguration : Registering application vision with eureka with status UP
+2016-11-01 18:38:07.215  INFO 9013 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1478043487215, current=UP, previous=STARTING]
+2016-11-01 18:38:07.217  INFO 9013 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_VISION/192.168.0.5:vision:0: registering service...
+2016-11-01 18:38:07.227  INFO 9013 --- [main] com.vzw.VisionApplication                : Started VisionApplication in 12.486 seconds (JVM running for 13.096)
+2016-11-01 18:38:07.257  INFO 9013 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_VISION/192.168.0.5:vision:0 - registration status: 204
+2016-11-01 18:39:05.932  INFO 9013 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2016-11-01 18:39:05.933  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2016-11-01 18:39:05.933  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2016-11-01 18:39:05.933  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2016-11-01 18:40:05.937  INFO 9013 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2016-11-01 18:40:05.938  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2016-11-01 18:40:05.939  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2016-11-01 18:40:05.939  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2016-11-01 18:41:05.944  INFO 9013 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2016-11-01 18:41:05.945  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2016-11-01 18:41:05.946  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2016-11-01 18:41:05.946  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2016-11-01 18:42:05.947  INFO 9013 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2016-11-01 18:42:05.947  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2016-11-01 18:42:05.947  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2016-11-01 18:42:05.947  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2016-11-01 18:43:05.950  INFO 9013 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2016-11-01 18:43:05.954  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2016-11-01 18:43:05.954  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2016-11-01 18:43:05.954  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2016-11-01 18:43:06.879  INFO 9013 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2016-11-01 18:44:05.952  INFO 9013 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2016-11-01 18:44:05.952  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2016-11-01 18:44:05.954  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2016-11-01 18:44:05.955  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2016-11-01 18:45:05.955  INFO 9013 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2016-11-01 18:45:05.955  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2016-11-01 18:45:05.955  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2016-11-01 18:45:05.955  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2016-11-01 18:46:05.959  INFO 9013 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2016-11-01 18:46:05.960  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2016-11-01 18:46:05.960  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2016-11-01 18:46:05.960  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2016-11-01 18:47:05.964  INFO 9013 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2016-11-01 18:47:05.964  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2016-11-01 18:47:05.964  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2016-11-01 18:47:05.964  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2016-11-01 18:48:05.974  INFO 9013 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2016-11-01 18:48:05.974  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2016-11-01 18:48:05.974  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2016-11-01 18:48:05.974  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2016-11-01 18:48:06.890  INFO 9013 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2016-11-01 18:49:05.981  INFO 9013 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2016-11-01 18:49:05.982  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2016-11-01 18:49:05.982  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2016-11-01 18:49:05.982  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2016-11-01 18:50:05.993  INFO 9013 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2016-11-01 18:50:05.994  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2016-11-01 18:50:05.994  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2016-11-01 18:50:05.994  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2016-11-01 18:51:05.996  INFO 9013 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2016-11-01 18:51:05.996  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2016-11-01 18:51:05.996  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2016-11-01 18:51:05.997  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2016-11-01 19:24:47.722  INFO 9013 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2016-11-01 19:24:47.724  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2016-11-01 19:24:47.724  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2016-11-01 19:24:47.725  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2016-11-01 19:29:49.357  INFO 9013 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2016-11-01 19:29:49.358  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2016-11-01 19:29:49.358  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2016-11-01 19:29:49.358  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2016-11-01 19:29:50.257  INFO 9013 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2016-11-01 19:35:48.949  INFO 9013 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2016-11-01 19:35:48.949  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2016-11-01 19:35:48.950  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2016-11-01 19:35:48.950  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2016-11-01 20:20:28.481  INFO 9013 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2016-11-01 20:20:28.482  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2016-11-01 20:20:28.482  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2016-11-01 20:20:28.482  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2016-11-01 21:14:28.947  INFO 9013 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2016-11-01 21:14:28.947  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2016-11-01 21:14:28.948  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2016-11-01 21:14:28.948  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2016-11-01 21:21:52.112  INFO 9013 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2016-11-01 21:21:52.113  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2016-11-01 21:21:52.113  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2016-11-01 21:21:52.113  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2016-11-01 21:32:43.091  INFO 9013 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2016-11-01 21:32:43.092  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2016-11-01 21:32:43.092  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2016-11-01 21:32:43.092  INFO 9013 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2016-11-01 21:32:43.974  INFO 9013 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

@@ -2,3 +2,16 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:1111/eureka/
+      
+spring:
+     aop:
+       proxy-target-class: true
+
+logging:
+  file: application.log
+  level:
+      org:
+        springframework:
+                      aop:
+                        interceptor:
+                             JamonPerformanceMonitorInterceptor: TRACE 
