@@ -1,7 +1,7 @@
 # Configure this Discovery Server
 eureka:
   instance:
-    hostname: 127.0.0.1
+    hostname: 192.168.59.103
     statusPageUrlPath: ${management.context-path}/info
     healthCheckUrlPath: ${management.context-path}/health
   client:  # Not a client, don't register with yourself
