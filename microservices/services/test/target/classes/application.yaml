@@ -1,7 +1,7 @@
 eureka:
   client:
     service-url:
-      defaultZone: http://192.168.59.103:1111/eureka/
+      defaultZone: http://eureka-server:1111/eureka/
       
 spring:
      aop:

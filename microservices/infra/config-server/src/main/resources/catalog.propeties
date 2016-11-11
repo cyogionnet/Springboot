@@ -1,0 +1,3 @@
+cassandra.contactpoints=service.datasource
+cassandra.port=9042
+cassandra.keyspace=verizon

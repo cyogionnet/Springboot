@@ -78,7 +78,7 @@ Importing project
 
 2) In application.properties files under config-server project change the path to point to the git location on your local system
 
-3) Two properties file would be required catalog.properties, device.properties, test.properties and vision.properties. The file would contain configuration information required by other projects and would be loaded by central config server.
+3) Two properties file would be required catalog.properties and vision.properties. The file would contain configuration information required by other projects and would be loaded by central config server.
 
 4) Following is the content of each property file, make sure these files are committed to git.(Create a new folder and initialize it as git repository. Add the 2 files to git repository and then commit it to git. You don’t have to push it to remote server)
 
@@ -91,6 +91,7 @@ cassandra.port=9042
 cassandra.keyspace=verizon
 
 vision.properties
+
 vision_url=http://localhost:7777/test/dummy
 
 5) If you have STS installed or STS plugin in eclipse you can start the servers from Boot Dashboard view. To get Boot Dashboard view from the Window menu of the IDE click on Show view and search for Boot Dashboard.
